@@ -1,0 +1,54 @@
+<div class="container-fluid py-4">
+  <h4 class="page-title">📊 Analytics Dashboard</h4>
+
+  <div *ngIf="loading" class="text-center py-5">
+    <div class="spinner-border text-primary" role="status"></div>
+    <p class="mt-2 text-muted">Loading analytics...</p>
+  </div>
+
+  <div *ngIf="error" class="alert alert-danger">{{ error }}</div>
+
+  <ng-container *ngIf="!loading && analytics">
+    <!-- Stat Cards -->
+    <div class="row g-3 mb-4">
+      <div class="col-md-4">
+        <div class="card stat-card p-4">
+          <p>👥 Total Users</p>
+          <h2>{{ analytics.totalUsers }}</h2>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card stat-card green p-4">
+          <p>💰 Total Sales</p>
+          <h2>${{ analytics.totalSales | number }}</h2>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card stat-card orange p-4">
+          <p>🆕 New Signups (7 days)</p>
+          <h2>{{ analytics.newSignups }}</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Charts Row -->
+    <div class="row g-3">
+      <div class="col-md-8">
+        <div class="card p-3">
+          <h6 class="fw-bold mb-3">📈 Monthly Sales (2024)</h6>
+          <div class="chart-container">
+            <canvas id="salesChart"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h6 class="fw-bold mb-3">🍩 User Roles</h6>
+          <div class="chart-container">
+            <canvas id="roleChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>
