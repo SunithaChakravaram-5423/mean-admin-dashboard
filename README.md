@@ -260,3 +260,12 @@ This project is for educational purposes only.
 
 ### 🆕 Register Page
 ![Register](ScreenShots/Register.png)
+
+
+
+## 🔗 GitHub Repository
+https://github.com/SunithaChakravaram-5423/mean-admin-dashboard
+
+
+## 👩‍💻 Author
+Sunitha Chakravaram
