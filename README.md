@@ -241,3 +241,22 @@ ng serve
 ## 📄 License
 
 This project is for educational purposes only.
+
+
+
+## 📸 Screenshots
+
+### 🔐 Login Page
+![Login](ScreenShots/image.png)
+
+### 📊 Dashboard
+![Dashboard](ScreenShots/Dashboard.png)
+
+### 👥 Users Management
+![Users](ScreenShots/Users.png)
+
+### 📝 Content Management
+![Content](ScreenShots/Content.png)
+
+### 🆕 Register Page
+![Register](ScreenShots/Register.png)
